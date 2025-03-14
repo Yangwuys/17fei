@@ -21,7 +21,7 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.x
+          deno-version: v1.x
 
       - name: Build step
         run: "deno task build"
@@ -29,7 +29,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "yangwuys-17fei-97"
+          project: "yangwuys-17fei-83"
           entrypoint: "main.ts"
           root: "."
           
